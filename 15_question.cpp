@@ -40,12 +40,27 @@ int main() {
     }
    }
   cout<<"blue team"<<endl;
+  int blue_count = 0 ;
    for(int out : blue){
-    cout<<out<<endl;
+    // cout<<out<<endl;
+    blue_count += out;
+   
    }
+    cout<<blue_count<<endl;
+
    cout<<"green team"<<endl;
+   int green_count = 0;
    for(int put : green){
-    cout<<put<<endl;
+    // cout<<put<<endl;
+    green_count+= put;
+   }
+   cout<<green_count<<endl;
+
+   if(green_count > blue_count){
+    cout<<"Team green is winner";
+   }
+   else{
+    cout<<"Team blue is Winner";
    }
    
 }
